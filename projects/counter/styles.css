@@ -54,6 +54,7 @@ body {
   font-size: 3.5rem;
 }
 
+/* Buttons */
 .container-buttons {
   flex-direction: row;
   gap: 1.5rem;
