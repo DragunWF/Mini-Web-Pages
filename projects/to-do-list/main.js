@@ -17,7 +17,7 @@ $(document).ready(function () {
   checkList();
 
   const empty_input_error = "Please type in something in the input field";
-  const max_list_error = "You have reached the maximum limit";
+  const max_capacity_error = "You have reached the maximum limit";
   $("#add").click(() => {
     const text = $("#input-field").val();
     if (list_count < 5 && text.length > 0) {
@@ -26,7 +26,8 @@ $(document).ready(function () {
       $("#main-list").append(`<li id="list-${list_count}">${text}</li>`);
       $("#input-field").val("");
     } else {
-      const error_msg = text.length > 0 ? max_list_error : empty_input_error;
+      const error_msg =
+        text.length > 0 ? max_capacity_error : empty_input_error;
       alert(error_msg);
     }
   });
