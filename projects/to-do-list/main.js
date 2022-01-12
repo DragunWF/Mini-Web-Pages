@@ -10,7 +10,7 @@ $(document).ready(function () {
     $(content).hide();
   }
 
-  $(".content").slideDown(1500, () => {
+  $(".content").fadeIn(1500, () => {
     $(".container").fadeIn(1000);
   });
 
