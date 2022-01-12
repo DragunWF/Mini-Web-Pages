@@ -4,7 +4,7 @@
   --color-text: #1d1c1a;
   --color-button: #bf5858;
 }
-/* #a12f2f; */
+
 html {
   font-size: 62.5%;
 }
@@ -25,6 +25,7 @@ body {
   justify-content: center;
 }
 
+/* Main */
 .content {
   width: 100%;
   height: 100%;
@@ -59,14 +60,12 @@ body {
   padding-left: 0;
 }
 
+/* Container Input Area */
 .container-input {
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
 }
-
-/* .container-input input {
-} */
 
 .container-input-buttons {
   flex-direction: row;
