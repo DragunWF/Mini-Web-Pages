@@ -1,0 +1,26 @@
+:root {
+  --color-background: #aa3333;
+  --color-container: #add8e6;
+  --color-text: #1d1c1a;
+  --color-button: #bf5858;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  color: var(--color-text);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-background);
+}
+
+/* Objects */
+.flex-object {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
