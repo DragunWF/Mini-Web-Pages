@@ -30,6 +30,3 @@ $(document).ready(function () {
     $(".container").fadeIn(1000);
   });
 });
-
-// Note: Can't animate the background, Must rely on a different method
-// Changed the href attribute of the images
