@@ -1,19 +1,14 @@
 $(document).ready(function () {
   const svgs = [
-    "diamong-sunset",
+    "diamond-sunset",
     "polka-dots",
-    "slanted-gradient",
-    "spectrum-gradient",
+    "protruding-squares",
+    "repeating-chevrons",
     "vanishing-stripes",
   ];
   let index = 0;
 
-  const hiddenContents = [
-    ".container",
-    ".background-back",
-    ".background-current",
-    ".background-next",
-  ];
+  const hiddenContents = [".container", ".content"];
 
   for (content of hiddenContents) {
     $(content).hide();
@@ -22,23 +17,16 @@ $(document).ready(function () {
   $("#next").click(() => {
     index++;
     if (index > svgs.length - 1) index = 0;
-    $(".background-current").animate(
-      {
-        background: url(`svgs/${svgs[index]}.svg`),
-      },
-      1000
-    );
+    $(".content").css("background-image", `url("svgs/${svgs[index]}.svg")`);
   });
   $("#back").click(() => {
     index--;
     if (index < 0) index = 4;
+    $(".content").css("background-image", `url("svgs/${svgs[index]}.svg")`);
   });
 
-  $(".background-current").animate({
-    // backgroundImage: `url(svgs/${svgs[index]}.svg)`,
-    background: "#ffffff",
-  });
-  $(".background-current").show();
+  $(".content").css("background-image", `url("svgs/${svgs[0]}.svg")`);
+  $(".content").show();
 
   $(".container").slideDown(1500, () => {
     $(".container-buttons").fadeIn(1000);
