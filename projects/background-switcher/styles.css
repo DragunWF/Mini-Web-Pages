@@ -24,3 +24,28 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.full-size-object {
+  width: 100%;
+  height: 100%;
+}
+
+/* Main */
+.container-buttons {
+  gap: 1.8rem;
+}
+
+.container button {
+  border-radius: 15px;
+  border: 3px solid var(--color-text);
+  padding: 1.2rem;
+  font-size: 3.5rem;
+  opacity: 0.9;
+  transition: all 0.25s;
+}
+
+.container button:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  opacity: 1;
+}
