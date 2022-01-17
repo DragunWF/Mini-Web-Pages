@@ -26,10 +26,8 @@ $(document).ready(function () {
   });
 
   $(".content").css("background-image", `url("svgs/${svgs[0]}.svg")`);
-  $(".content").show();
-
-  $(".container").slideDown(1500, () => {
-    $(".container-buttons").fadeIn(1000);
+  $(".content").slideDown(1500, () => {
+    $(".container").fadeIn(1000);
   });
 });
 
