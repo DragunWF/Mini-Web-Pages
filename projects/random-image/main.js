@@ -19,7 +19,7 @@ $(document).ready(function () {
   }
 
   $(".content").slideDown(1500, () => {
-    $(".container").fadeIn(1000);
+    $(".container").fadeIn(1250);
   });
 
   $("#roll").click(() => {
@@ -28,7 +28,6 @@ $(document).ready(function () {
       if (random_number !== previous_number) break;
     }
     previous_number = random_number;
-    console.log(random_number);
     $("#main-image").attr("src", `img/${images[random_number][0]}.jpg`);
     $("#image-heading").text(images[random_number][1]);
   });
