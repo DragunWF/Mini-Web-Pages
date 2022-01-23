@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Theme Switcher</title>
+    <title>Random Image</title>
     <link rel="icon" href="/icon.png" />
     <link rel="stylesheet" href="/essential/normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="/essential/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <div class="content">
-      <div class="container"></div>
+    <div class="content flex-object">
+      <div class="container flex-object">
+        <h1 id="image-heading">Heading Text</h1>
+        <img src="" alt="image could not be loaded" id="main-image" />
+        <div class="container-buttons flex-object">
+          <button type="button" id="roll">Roll</button>
+          <a href="" download="" target="_blank" id="download"
+            ><button type="button">Download Image</button></a
+          >
+        </div>
+      </div>
     </div>
   </body>
   <script src="main.js"></script>
