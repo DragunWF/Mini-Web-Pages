@@ -24,10 +24,11 @@ $(document).ready(function () {
 
   $("#roll").click(() => {
     while (true) {
-      random_number = Math.floor(Math.random() * (images.length - 1));
+      random_number = Math.floor(Math.random() * images.length);
       if (random_number !== previous_number) break;
     }
     previous_number = random_number;
+    console.log(random_number);
     $("#main-image").attr("src", `img/${images[random_number][0]}.jpg`);
     $("#image-heading").text(images[random_number][1]);
   });
