@@ -16,9 +16,20 @@ body {
   color: var(--color-text);
 }
 
+p {
+  width: 70ch;
+}
+
 /* Objects */
 .flex-object {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Main */
+.nav-list {
+  list-style: none;
+  margin-left: 0;
+  gap: 3rem;
 }
