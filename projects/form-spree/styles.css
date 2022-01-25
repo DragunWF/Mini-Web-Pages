@@ -2,22 +2,22 @@
   --color-text: #1d1c1a;
 }
 
-::selection {
-  background: var(--color-background);
-  color: rgb(231, 117, 117);
-}
-
 html {
   font-size: 62.5%;
 }
 
 body {
+  background: #c54245;
+  color: var(--color-text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.6rem;
   width: 100%;
   height: 100vh;
-  color: var(--color-text);
+}
+
+textarea {
+  resize: none;
 }
 
 /* Objects */
@@ -25,4 +25,53 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.inherit-size {
+  width: 100%;
+  height: 100%;
+}
+
+/* Main */
+.content {
+  background: rgb(238, 55, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 55, 31, 1) 20%,
+    rgba(238, 144, 36, 0.9836309523809523) 96%
+  );
+  /* background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+.container {
+  background: #ff971a;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.container h1 {
+  margin-bottom: 0.5rem;
+}
+
+.container-buttons {
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.container-buttons button {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.1rem;
+  border-radius: 15px;
+  border: 0;
+  transition: all 0.25s;
+}
+
+.container-buttons button:hover {
+  transform: scale(1.05);
 }
