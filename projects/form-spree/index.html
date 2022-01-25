@@ -4,12 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Counter</title>
+    <title>Form Spree</title>
     <link rel="icon" href="/icon.png" />
     <link rel="stylesheet" href="/essential/normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="/essential/jquery-3.6.0.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="content flex-object inherit-size">
+      <div class="container flex-object">
+        <form
+          action="https://formspree.io/f/mknyoezq"
+          method="POST"
+          class="container flex-object inherit-size"
+        >
+          <h1>Form will be sent to Form-Spree</h1>
+          <input
+            type="text"
+            name="Name"
+            placeholder="Optional Name"
+            id="input-name"
+          />
+          <textarea
+            name="message"
+            id="input-textarea"
+            cols="30"
+            rows="10"
+            placeholder="Enter your message here"
+          ></textarea>
+          <div class="container-buttons flex-object">
+            <button type="button" id="submit">Submit</button>
+            <button type="button" id="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
   <script src="main.js"></script>
 </html>
