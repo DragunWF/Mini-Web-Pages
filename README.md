@@ -1,6 +1,7 @@
-# jQuery Mini Projects
+# Mini-Web-Pages
 
-### Description:
+## Description:
 
-- Hello! This is just a repository for my mini projects with jQuery. The purpose of this entire
-  thing is basically just for me to practice using jQuery and also for fun!
+Hello! This is just a repository for my mini web pages. This is just a repo full of projects
+with me mostly just toying around JavaScript. I didn't really focus much on the UI design so
+don't expect them to be very good looking hehe.
